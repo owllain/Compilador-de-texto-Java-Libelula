@@ -1,0 +1,41 @@
+# CompiladorLibelula
+Manual de usuario del compilador LIBELULA
+
+Introducción:
+El objetivo de este manual es presentar el funcionamiento y uso del compilador LIBELULA, 
+un prototipo inferior basado en MODULA-2 que permite realizar análisis léxicos y parte del análisis sintáctico de un texto. 
+El programa ha sido diseñado para que los estudiantes puedan familiarizarse con la estructura de un compilador y 
+para su uso en la asignatura correspondiente.
+
+Requisitos previos:
+Para utilizar el compilador LIBELULA es necesario tener instalado JDK19 o la versión 1.8 de Java.
+Se requiere conocer las reglas del lenguaje LIBELULA, el cual es una versión inferior a MODULA-2
+Tener un archivo de pruebas.
+
+Instalación:
+El compilador se encuentra en formato .jar y se puede ejecutar desde la ubicación deseada mediante
+cmd o desde la configuración del proyecto en Netbeans. Se recomienda que el archivo .jar y el 
+archivo de texto que se desea analizar estén en la misma carpeta de ubicación.
+
+Uso del programa:
+Para utilizar el programa se debe inicializar el proyecto desde cmd o desde Netbeans, enviando el 
+nombre del archivo que se desea abrir como argumento. El programa realizará un análisis léxico, 
+sintáctico y semántico del archivo y en caso de encontrar errores devolverá un archivo .lid con los errores señalados 
+por línea. En caso de no encontrar palabras clave como BEGIN, MODULE o END que forman parte de la estructura 
+esperada, el programa también agregará errores adicionales al final del archivo.
+
+Actualizacion Proyecto:
+Se corrige el procesamiendo de MODULE y BEGIN para verificar que se hagan validaciones para no permitir comandos previos a su declaración.
+Se modifican los mensajes de error para ser más claros en cuanto a su significado y en caso correspondiente mostrar el lexema que provocó el error.
+Se modifica el prcesamiento de comandos para ignorar FROM.
+Se modifica el procesamineto de Write y WriteLn para su uso correcto.
+Se modifica el uso correcto de los comandos Read.
+Se modifica la forma en la que se procesa la asignación de variables y expresiones.
+Se implementa el manejo de los comandos IF-THEN y REPEAT-UNTIL.
+
+Conclusión:
+El compilador LIBELULA es una herramienta útil para los estudiantes que deseen familiarizarse con la 
+estructura de un compilador y para la realización de análisis léxicos y sintácticos. A través de su uso 
+se pueden detectar errores en el código y mejorar la calidad del mismo. Se espera que este manual sea de 
+ayuda para el uso del compilador y que futuras actualizaciones permitan una mejor implementación 
+y eficiencia del programa.
